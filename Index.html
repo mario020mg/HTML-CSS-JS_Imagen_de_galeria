@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Galeria De Fotos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ejemplo Imagen Galeria</h1>
+    <div class="gallery">
+      <div class="item">
+        <img
+          src="https://img.freepik.com/free-photo/closeup-shot-green-iguana_181624-11870.jpg?t=st=1739714844~exp=1739718444~hmac=bc3c135ec794c63c5b61d4e18ee890e58d5169ef984bc9c9d773462c45ef1672&w=1380"
+          class="thumbnail"
+          alt="Imagen de Iguana"
+          onclick="showModal(this)"
+        />
+        <h2>Iguana</h2>
+      </div>
+    </div>
+
+    <div id="modal">
+      <span id="modal-close-button" onclick="hideModal(this)">x</span>
+      <img id="modal-content" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
